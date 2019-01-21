@@ -1,0 +1,21 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+
+  @include phones() {
+    padding-top: 15px;
+  }
+}
+.logo {
+  width: 80px;
+  height: 28px;
+  background-image: url('../../images/Nike_Logop.png');
+}
+.menu {
+  width: 28px;
+  height: 19px;
+  background-image: url('../../images/Menu_Icon.png');
+}

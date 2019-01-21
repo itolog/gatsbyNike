@@ -1,0 +1,11 @@
+@import '../../styles/mixins.scss';
+
+.wrapp {
+  position: relative;
+  width: 100%;
+  max-width: 1132px;
+  margin: 0 auto;
+  @include desktop() {
+    padding: 0 17px;
+  }
+}

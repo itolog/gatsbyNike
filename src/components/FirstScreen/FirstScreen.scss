@@ -1,0 +1,100 @@
+@import '../../styles/mixins.scss';
+
+.first-screen {
+  position: relative;
+  width: 100%;
+  height: 780px;
+  background-color: #00b3e0;
+  background-image: radial-gradient(
+    circle 1200px at center,
+    #03cddb 0%,
+    #005773 100%
+  );
+  z-index: 10;
+  @include phones() {
+    height: 610px;
+  }
+}
+.content {
+  width: 100%;
+  height: 100%;
+}
+.info {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  margin-top: 153px;
+  margin-left: 110px;
+  @include tablets() {
+    width: 80%;
+    margin-left: 10px;
+  }
+}
+.first-screen--title {
+  width: 360px;
+  color: #00fffc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 80px;
+  @include phones() {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+.info--btns {
+  display: flex;
+  flex-flow: row;
+}
+.btns--item {
+  padding: 11px 0;
+  width: 166px;
+  box-shadow: 0 10px 30px rgba(20, 108, 113, 0.15),
+    inset 0 0 2px rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  &:first-child {
+    margin-right: 25px;
+  }
+}
+.btns--item:hover {
+  transition: 0.3s;
+  background-color: #00ecf4;
+  border-color: #00ecf4;
+  cursor: pointer;
+}
+// CIRCLES
+.circle-1 {
+  position: absolute;
+  opacity: 0.2;
+  top: 36px;
+  right: 116px;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.circle-2 {
+  top: 584px;
+  left: 136px;
+  @include phones() {
+    display: none;
+  }
+}
+.main-image {
+  position: relative;
+  width: 113%;
+  top: -401px;
+  right: 67px;
+  z-index: 1;
+  @include desktop() {
+    width: 100%;
+  }
+  @include phones() {
+    margin-top: 15%;
+  }
+}

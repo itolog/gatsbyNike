@@ -1,0 +1,51 @@
+@import '../../styles/mixins.scss';
+
+.second-screen {
+  position: relative;
+  // min-height: 700px;
+  // max-height: 900px;
+  width: 100%;
+  z-index: 20;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+}
+.bg--img {
+  position: relative;
+  top: -202px;
+  width: 100%;
+  @include phonesMini() {
+    top: -180px;
+  }
+}
+
+.wrappShoe {
+  background: url('../../images/Group_3.svg') no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -38px;
+  background-size: 79% 83%;
+  background-position: 125px 54px;
+  @include desktop() {
+    top: -108px;
+  }
+  @include laptop() {
+    top: -140px;
+  }
+  @include tablets() {
+    background-position: 85px 44px;
+    top: -140px;
+  }
+  @include phones() {
+    background-position: 36px 32px;
+    top: -170px;
+  }
+}
+.imgShoe {
+  position: relative;
+  width: 60%;
+  top: 17px;
+  left: 0px;
+}
