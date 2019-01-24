@@ -3,7 +3,6 @@
 .first-screen {
   position: relative;
   width: 100%;
-  height: 780px;
   background-color: #00b3e0;
   background-image: radial-gradient(
     circle 1200px at center,
@@ -11,13 +10,22 @@
     #005773 100%
   );
   z-index: 10;
-  @include phones() {
-    height: 610px;
-  }
 }
 .content {
   width: 100%;
-  height: 100%;
+  height: 800px;
+  @include tablets() {
+    height: 638px;
+  }
+  @include phones() {
+    height: 472px;
+  }
+}
+
+.bg--img {
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
 }
 .info {
   position: relative;

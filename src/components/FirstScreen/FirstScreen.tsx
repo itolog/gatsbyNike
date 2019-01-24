@@ -29,6 +29,11 @@ class FirstScreen extends React.PureComponent<{}, {}> {
             </div>
           </div>
         </WrappCenter>
+        <img
+          className="bg--img"
+          src={require('../../images/top_pn.svg')}
+          alt="bg2"
+        />
       </section>
     );
   }

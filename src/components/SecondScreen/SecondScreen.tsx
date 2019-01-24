@@ -8,16 +8,14 @@ class SecondScreen extends React.PureComponent<{}, {}> {
   public render() {
     return (
       <section className="second-screen">
-        <div className="bg">
-          <img
-            className="bg--img"
-            src={require('../../images/bgpng.svg')}
-            alt="bg2"
-          />
-        </div>
         <WrappCenter>
           <div className="content--second">
             <div className="wrappShoe">
+              <div className="text">
+                <div className="text--item1">red</div>
+                <div className="text--item2">dsd</div>
+                <div className="text--item3">dfdf</div>
+              </div>
               <div className="imgShoe">
                 <Image />
               </div>
