@@ -4,6 +4,7 @@ import Header from '../Header';
 import './FirstScreen.scss';
 import Image from '../../UI/Image1';
 import WrappCenter from '../WrappCenter/WrappCenter';
+import ButtonMy from '../../UI/button/ButtonMy';
 
 class FirstScreen extends React.PureComponent<{}, {}> {
   public render() {
@@ -20,8 +21,8 @@ class FirstScreen extends React.PureComponent<{}, {}> {
                 Your Title Goes Here Make It Long & Maybe 3 Lines
               </h1>
               <div className="info--btns">
-                <button className="btns--item">explore</button>
-                <button className="btns--item">Add to cart</button>
+                <ButtonMy text="explore" />
+                <ButtonMy text="Add to cart" />
               </div>
             </div>
             <div className="main-image">

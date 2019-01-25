@@ -9,6 +9,11 @@
     @content;
   }
 }
+@mixin tabletsMini() {
+  @media screen and (max-width: 840px) {
+    @content;
+  }
+}
 @mixin tablets() {
   @media screen and (max-width: 768px) {
     @content;

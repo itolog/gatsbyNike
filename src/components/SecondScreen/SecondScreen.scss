@@ -4,6 +4,10 @@
   position: relative;
   width: 100%;
   z-index: 20;
+  overflow: hidden;
+  @include phones() {
+    min-height: 250px;
+  }
 }
 
 .wrappShoe {
@@ -19,9 +23,9 @@
     top: 0;
   }
   @include tablets() {
-    background-position: 85px 44px;
+    background-position: 42px 50px;
   }
-  @include phones() {
+  @include phonesMini() {
     background-position: 36px 32px;
   }
 }
@@ -32,17 +36,48 @@
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  &--item1 {
+  color: #00dfee;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  @include phones() {
+    font-size: 0.8em;
+  }
+  &--item {
+    width: 100%;
+    @include phones() {
+      width: 99%;
+    }
+  }
+  &--item__1 {
     grid-column-start: 1;
     grid-row-start: 2;
+    margin: -5% 0px 0px 15%;
+    @include tablets() {
+      margin: 0 0px 0px 1%;
+    }
+    @include phones() {
+      width: 69%;
+      margin: -1% 0px 0px -7%;
+    }
   }
-  &--item2 {
+  &--item__2 {
     grid-column-start: 3;
     grid-row-start: 1;
+    margin: 15% 0 0 4%;
+    @include tabletsMini() {
+      margin: 21% 0 0 -16%;
+    }
   }
-  &--item3 {
+  &--item__3 {
     grid-column-start: 3;
     grid-row-start: 2;
+    margin: 12% 0 0 36%;
+
+    @include tabletsMini() {
+      margin: 18% 0 0 9%;
+    }
   }
 }
 .imgShoe {
@@ -50,4 +85,17 @@
   width: 60%;
   top: 17px;
   left: 0px;
+}
+.wrappShoe--btn {
+  position: relative;
+  left: 38%;
+  top: 33%;
+  grid-column-start: 1;
+  grid-row-start: 3;
+
+  @include phones() {
+    width: 100px;
+    left: 0;
+    // bottom: 0;
+  }
 }

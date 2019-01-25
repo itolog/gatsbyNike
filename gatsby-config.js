@@ -4,7 +4,7 @@ const mqPacker = require('css-mqpacker');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby TypeScript Boilerplate',
+    title: 'Gatsby Nike',
     siteUrl: `https://hungry-agnesi-d17af2.netlify.com/`,
   },
   plugins: [
