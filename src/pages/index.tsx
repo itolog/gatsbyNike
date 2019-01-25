@@ -1,13 +1,10 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import './indexPage.scss';
 import FirstScreen from '../components/FirstScreen/FirstScreen';
-const SecondScreen = lazy(() =>
-  import('../components/SecondScreen/SecondScreen')
-);
-import Loader from '../UI/Loader';
+import SecondScreen from '../components/SecondScreen/SecondScreen';
 
 interface StaticQueryProps {
   site: {
@@ -44,9 +41,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
               <html lang="ru" />
             </Helmet>
             <FirstScreen />
-            <Suspense fallback={<Loader />}>
-              <SecondScreen />
-            </Suspense>
+            <SecondScreen />
           </React.Fragment>
         )}
       />
