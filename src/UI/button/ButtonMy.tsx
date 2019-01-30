@@ -3,12 +3,15 @@ import './button.scss';
 
 export interface AppProps {
   text: string;
-  styles?: object;
+  rever?: string;
+  className?: string;
 }
 
 const ButtonMy = (props: AppProps) => {
   return (
-    <button className="btns--item" style={props.styles}>
+    <button
+      className={!props.rever ? 'btns--item' : 'btns--item btns--item__rever'}
+    >
       {props.text}
     </button>
   );

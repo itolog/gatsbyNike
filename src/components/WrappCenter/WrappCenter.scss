@@ -3,9 +3,13 @@
 .wrapp {
   position: relative;
   width: 100%;
+  height: inherit;
   max-width: 1132px;
   margin: 0 auto;
   @include desktop() {
     padding: 0 17px;
+  }
+  @include phones() {
+    padding: 0 2%;
   }
 }

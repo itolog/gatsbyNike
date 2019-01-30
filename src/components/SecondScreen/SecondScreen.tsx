@@ -11,22 +11,21 @@ class SecondScreen extends React.PureComponent<{}, {}> {
       <section className="second-screen">
         <WrappCenter>
           <div className="content--second">
-            <div className="wrappShoe">
-              <div className="text">
-                <div className="text--item text--item__1">
-                  Your Awesome Text
-                </div>
-                <div className="text--item text--item__2">
-                  Your Awesome Text
-                </div>
-                <div className="text--item text--item__3">
-                  Another Awesome Text
-                </div>
-                <div className="wrappShoe--btn">
-                  <ButtonMy styles={{ color: 'black' }} text="buy now" />
-                </div>
+            <div className="text">
+              <div className="text--item text--item__1">
+                <span>Your Awesome Text</span>
               </div>
-
+              <div className="text--item text--item__2">
+                <span> Your Awesome Text</span>
+              </div>
+              <div className="text--item text--item__3">
+                <span> Another Awesome Text</span>
+              </div>
+              <div className="wrappShoe--btn">
+                <ButtonMy rever="rever" text="buy now" />
+              </div>
+            </div>
+            <div className="wrappShoe">
               <div className="imgShoe">
                 <Image />
               </div>
@@ -37,5 +36,4 @@ class SecondScreen extends React.PureComponent<{}, {}> {
     );
   }
 }
-
 export default SecondScreen;

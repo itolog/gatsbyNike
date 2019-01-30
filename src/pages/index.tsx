@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import './indexPage.scss';
 import FirstScreen from '../components/FirstScreen/FirstScreen';
 import SecondScreen from '../components/SecondScreen/SecondScreen';
+import ThirdScreen from '../components/ThirdScreen/ThirdScreen';
 
 interface StaticQueryProps {
   site: {
@@ -42,6 +43,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
             </Helmet>
             <FirstScreen />
             <SecondScreen />
+            <ThirdScreen />
           </React.Fragment>
         )}
       />
