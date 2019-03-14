@@ -58,5 +58,6 @@ module.exports = {
     `gatsby-plugin-tslint`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify`,
+    'react-star-rating-component',
   ],
 };

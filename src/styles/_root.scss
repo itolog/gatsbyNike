@@ -22,7 +22,12 @@ details {
 h1 {
   font-size: 2em;
 }
-
+h3 {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
 body,
 p,
 button,
@@ -31,6 +36,10 @@ optgroup,
 select,
 textarea {
   margin: 0;
+}
+
+button {
+  outline: none;
 }
 
 hr {

@@ -8,6 +8,7 @@
     "import-name": false,
     "no-boolean-literal-compare": false,
     "variable-name": false,
-    "trailing-comma": true
+    "trailing-comma": true,
+    "semicolon": [false]
   }
 }

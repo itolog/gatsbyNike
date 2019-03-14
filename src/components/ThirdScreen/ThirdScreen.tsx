@@ -34,6 +34,9 @@ class ThirdScreen extends React.PureComponent<{}, {}> {
             alt="bg2"
           />
         </div>
+        <div className="last-screen--bott-svg">
+          <img src={require('../../images/top_for.svg')} alt="bg2" />
+        </div>
       </section>
     );
   }

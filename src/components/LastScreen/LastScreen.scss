@@ -1,0 +1,90 @@
+@import '../../styles/mixins.scss';
+
+.last-screen {
+  position: relative;
+  // height: 600px;
+  margin-bottom: 130px;
+}
+.wrapp-last {
+  width: 100%;
+  height: 100%;
+}
+.wrapp-last--image {
+  margin: 4% 0 10% 0;
+}
+.last-content {
+  display: flex;
+  @include tablets() {
+    flex-flow: column;
+  }
+}
+.last-left,
+.last-right {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+.last-left {
+  @include tablets() {
+    margin-bottom: 35px;
+  }
+}
+.last-left--title {
+  font-size: 27px;
+  padding-top: 4px;
+  margin-bottom: 17px;
+  color: #263238;
+}
+.last-left--subtitle {
+  font-size: 15px;
+  color: #263238;
+  margin-bottom: 22px;
+}
+.last-buy {
+  display: flex;
+}
+.last-bay--price {
+  color: #f50057;
+  font-size: 32px;
+  font-weight: bold;
+}
+.last-buy--btn {
+  width: 108px;
+  margin-left: 20px;
+}
+
+//RIGHT
+.last-right {
+  justify-content: center;
+  align-items: flex-end;
+}
+.star_border {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
+  height: 45px;
+  min-width: 220px;
+  margin-bottom: 12px;
+}
+.dv-star-rating {
+  display: flex !important;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dv-star-rating-star.dv-star-rating-full-star {
+  font-size: 34px;
+  margin: 5px;
+}
+.dv-star-rating-star.dv-star-rating-empty-star {
+  font-size: 34px;
+  margin: 5px;
+}
+
+.last-right--text {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: rgb(0, 236, 244);
+  text-align: right;
+}

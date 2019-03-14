@@ -6,6 +6,8 @@ import './indexPage.scss';
 import FirstScreen from '../components/FirstScreen/FirstScreen';
 import SecondScreen from '../components/SecondScreen/SecondScreen';
 import ThirdScreen from '../components/ThirdScreen/ThirdScreen';
+import LastScreen from '../components/LastScreen/LastScreen';
+import Footer from '../components/Footer/Footer';
 
 interface StaticQueryProps {
   site: {
@@ -44,6 +46,8 @@ class IndexPage extends React.PureComponent<{}, {}> {
             <FirstScreen />
             <SecondScreen />
             <ThirdScreen />
+            <LastScreen />
+            <Footer />
           </React.Fragment>
         )}
       />
