@@ -19,7 +19,7 @@ class LastScreen extends React.PureComponent<{}, {}> {
     return (
       <section className="last-screen">
         <WrappCenter>
-          <div className="wrapp-last">
+          <div className="wrapp-last" id="yoyoy">
             <div className="wrapp-last--image">
               <Image />
             </div>

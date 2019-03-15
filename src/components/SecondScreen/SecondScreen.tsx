@@ -10,7 +10,7 @@ class SecondScreen extends React.PureComponent<{}, {}> {
     return (
       <section className="second-screen">
         <WrappCenter>
-          <div className="content--second">
+          <div className="content--second" id="first">
             <div className="text">
               <div className="text--item text--item__1">
                 <span>Your Awesome Text</span>

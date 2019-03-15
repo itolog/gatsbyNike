@@ -10,7 +10,7 @@ class ThirdScreen extends React.PureComponent<{}, {}> {
     return (
       <section className="third-screen">
         <WrappCenter>
-          <div className="wrapp-content">
+          <div className="wrapp-content" id="second">
             <div className="wrapp-content--image">
               <Image />
             </div>

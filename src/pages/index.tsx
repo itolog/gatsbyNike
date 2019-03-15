@@ -8,7 +8,7 @@ import SecondScreen from '../components/SecondScreen/SecondScreen';
 import ThirdScreen from '../components/ThirdScreen/ThirdScreen';
 import LastScreen from '../components/LastScreen/LastScreen';
 import Footer from '../components/Footer/Footer';
-
+import MenuNav from '../components/MenuNav/MenuNav';
 interface StaticQueryProps {
   site: {
     siteMetadata: {
@@ -43,6 +43,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
             >
               <html lang="ru" />
             </Helmet>
+            <MenuNav />
             <FirstScreen />
             <SecondScreen />
             <ThirdScreen />
