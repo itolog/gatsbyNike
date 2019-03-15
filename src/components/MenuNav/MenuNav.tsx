@@ -6,7 +6,7 @@ import { menuActionHide } from '../../store/action.js';
 
 const MenuNav = (props: any) => {
   const { loadMenu, loadedMenu } = props;
-  const [visebled, setVisible] = useState(true);
+  const [visebled, setVisible] = useState(false);
   const [classUsers, setClass] = useState('hidden');
   useEffect(() => {
     setVisible(loadMenu);
