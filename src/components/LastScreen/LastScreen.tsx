@@ -7,7 +7,7 @@ import StarRatingComponent from 'react-star-rating-component';
 
 class LastScreen extends React.PureComponent<{}, {}> {
   state = {
-    rating: 1,
+    rating: 3,
   };
 
   onStarClick = (nextValue: number): void => {

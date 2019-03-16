@@ -4,7 +4,12 @@ import './menu.scss';
 
 import { menuActionHide } from '../../store/action.js';
 
-const MenuNav = (props: any) => {
+interface Props {
+  loadMenu: boolean;
+  loadedMenu: Function;
+}
+
+const MenuNav = React.memo((props: Props) => {
   const { loadMenu, loadedMenu } = props;
   const [visebled, setVisible] = useState(false);
   const [classUsers, setClass] = useState('hidden');
@@ -23,6 +28,12 @@ const MenuNav = (props: any) => {
     loadedMenu();
   };
 
+  const handleHrefClick = (e: any): void => {
+    if (e.target.tagName === 'A') {
+      loadedMenu();
+    }
+  };
+
   return (
     <section className={classUsers}>
       <div className="navi-content">
@@ -34,7 +45,7 @@ const MenuNav = (props: any) => {
             alt="close"
             onClick={handleHide}
           />
-          <ul className="nav">
+          <ul className="nav" onClick={handleHrefClick}>
             <li className="nav-item">
               <a href="#first" className="nav-hre">
                 item 1
@@ -55,7 +66,7 @@ const MenuNav = (props: any) => {
       </div>
     </section>
   );
-};
+});
 
 const mapStateToProps = (state: any) => {
   return {
